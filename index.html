@@ -14,8 +14,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="leaflet/leaflet.js"></script>
     <script type="text/javascript">
-      var northwest = L.latLng(43, -86),
-          southeast = L.latLng(42, -82),
+      var northwest = L.latLng(42.8, -85),
+          southeast = L.latLng(42.6, -84),
           map = L.map('map').setMaxBounds(northwest, southeast).setView([42.732224, -84.478351], 17);
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, example by Brian',
