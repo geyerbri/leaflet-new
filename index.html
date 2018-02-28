@@ -9,13 +9,13 @@
     <h1>Example Page</h1>
     <h2>Initialize</h2>
     <p>Hello World!</p>
-    <div id="map" style="height: 300px"></div>
+    <div id="map" style="height: 500px"></div>
       
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="leaflet/leaflet.js"></script>
     <script type="text/javascript">
-      var northwest = L.latLng(44, -86),
-          southeast = L.latLng(41, -82),
+      var northwest = L.latLng(43, -86),
+          southeast = L.latLng(42, -82),
           map = L.map('map').setMaxBounds(northwest, southeast).setView([42.732224, -84.478351], 17);
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, example by Brian',
