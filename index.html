@@ -23,7 +23,6 @@
         accessToken: 'pk.eyJ1IjoiZ2V5ZXJicmktbXN1IiwiYSI6IkxTRGhIQnMifQ.HbqL3TWxcEQLB61NEzCNYA'
       }).addTo(map);
       var pins = L.geoJSON().addTo(map);
-      pins.addData(geoJSON);      
       var geoJSON = [
           {
             type: 'Feature',
@@ -52,6 +51,7 @@
             }
           }
       ];
+      pins.addData(geoJSON);      
       L.geoJSON(geoJSON).addTo(map);
     </script>
   </body>
